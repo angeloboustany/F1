@@ -23,3 +23,29 @@ h1 {
     width: 100%;
     height: 100%;
 }
+
+.Footer {
+    position: fixed;
+    left: 45%;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: magenta;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    text-decoration: underline;
+}
