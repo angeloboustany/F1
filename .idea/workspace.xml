@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added footer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added footer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
       <updated>1647616904650</updated>
       <workItem from="1647616906032" duration="98000" />
       <workItem from="1647617342419" duration="2616000" />
-      <workItem from="1647696708247" duration="8211000" />
+      <workItem from="1647696708247" duration="8516000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -95,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647704327702</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added footer">
+      <created>1647705421216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647705421217</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
