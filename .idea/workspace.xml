@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="fixed some position issues">
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="README.md update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
       <workItem from="1647617342419" duration="2616000" />
       <workItem from="1647696708247" duration="8698000" />
       <workItem from="1647706708328" duration="1802000" />
-      <workItem from="1647708553847" duration="466000" />
+      <workItem from="1647708553847" duration="5166000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647707502334</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="README.md update">
+      <created>1647709062858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647709062858</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +151,7 @@
     <MESSAGE value="more responsive design n chrome" />
     <MESSAGE value="added footer" />
     <MESSAGE value="fixed some position issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some position issues" />
+    <MESSAGE value="README.md update" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md update" />
   </component>
 </project>

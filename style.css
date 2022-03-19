@@ -1,15 +1,11 @@
 body {
     background-color: black;
 }
-h1 {
-    color: white;
-    text-align: center;
-}
-
 .container {
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin-top: 5%;
     padding-top: 35%;
 }
 
@@ -23,6 +19,13 @@ h1 {
     width: 100%;
     height: 100%;
 }
+
+h1 {
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
 
 .Footer {
     position: fixed;
