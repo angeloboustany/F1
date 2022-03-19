@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="netlify support">
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added disqus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <workItem from="1647696708247" duration="8698000" />
       <workItem from="1647706708328" duration="1802000" />
       <workItem from="1647708553847" duration="6332000" />
-      <workItem from="1647718581877" duration="3802000" />
+      <workItem from="1647718581877" duration="5383000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647716009200</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added disqus">
+      <created>1647722879933</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1647722879933</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +175,7 @@
     <MESSAGE value="README.md update" />
     <MESSAGE value="added new streaming provider" />
     <MESSAGE value="netlify support" />
-    <option name="LAST_COMMIT_MESSAGE" value="netlify support" />
+    <MESSAGE value="added disqus" />
+    <option name="LAST_COMMIT_MESSAGE" value="added disqus" />
   </component>
 </project>
