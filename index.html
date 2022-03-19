@@ -13,18 +13,59 @@
 </head>
 <body>
     <h1>F1 Stream</h1>
-
     <!-- <div class="container">
         <iframe class="responsive" src="http://wikisport.click/strm/f1.php" name="frame" allow="fullscreen" scrolling="no" sandbox="allow-same-origin allow-scripts"></iframe>
     </div> -->
     <div class="container">
             <iframe class="responsive" src="//f1livegp.me/f1/live.php" name="frame2" allow="fullscreen" scrolling="no" sandbox="allow-same-origin allow-scripts"></iframe>
     </div>
+    <br>
+    <br>
+
+    <h4> Watch F1 GrandPrix live stream, without any registration and advertisement. </h4>
+
+    <br>
+    <br>
+
+
+
+
+    <div id="disqus_thread">
+        <h3>Show Comments : <a href="#disqus_thread" class="comments-holder" onclick="loadDisqus();return false;"></a></h3>
+    </div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+        var disqus_config = function () {
+        this.page.url = f1.boustany.tech;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = f1.boustany.tech; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        var is_disqus_loaded = false;
+        function loadDisqus() {
+            if (!is_disqus_loaded) {
+                is_disqus_loaded = true;
+                var d = document, s = d.createElement('script');
+                s.src = 'https://f1-boustany-tech.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            }
+        };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
 <footer>
     <p class="Footer">
     Brought to you by <a href="https://github.com/angeloboustany">@angeloboustany </a> <br>
     &copy; 2022 <a href="https://f1.boustany.tech/">f1.boustany.tech</a>
     </p>
+    <script id="dsq-count-scr" src="https://f1-boustany-tech.disqus.com/count.js" async></script>
 </footer>
 </body>
 </html>

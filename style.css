@@ -6,6 +6,7 @@ body {
     overflow: hidden;
     width: 100%;
     margin-top: 5%;
+    margin-bottom: 5%;
     padding-top: 35%;
 }
 
@@ -25,10 +26,14 @@ h1 {
     color: white;
     text-align: center;
 }
+h3,h4,p {
+    color: white;
+    text-align: center;
+}
 
 
 .Footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -47,4 +52,7 @@ a:visited {
 a:hover {
     color: red;
     text-decoration: underline;
+}
+#disqus_thread{
+    text-align: center;
 }
