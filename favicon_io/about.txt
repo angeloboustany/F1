@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Racing Sans One
+- Font Author: Copyright (c) 2012, Pablo Impallari (www.impallari.com|impallari@gmail.com) and Rodrigo Fuenzalida (www.rfuenzalida.com), with Reserved Font Name Racing Sans.
+- Font Source: http://fonts.gstatic.com/s/racingsansone/v11/sykr-yRtm7EvTrXNxkv5jfKKyDCwL3rmWpIBtA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
