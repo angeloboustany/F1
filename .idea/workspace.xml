@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added footer">
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="fixed some position issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,8 @@
       <workItem from="1647616906032" duration="98000" />
       <workItem from="1647617342419" duration="2616000" />
       <workItem from="1647696708247" duration="8698000" />
-      <workItem from="1647706708328" duration="688000" />
+      <workItem from="1647706708328" duration="1802000" />
+      <workItem from="1647708553847" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647705857910</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed some position issues">
+      <created>1647707502334</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647707502334</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +142,7 @@
     <MESSAGE value="more responsive design" />
     <MESSAGE value="more responsive design n chrome" />
     <MESSAGE value="added footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer" />
+    <MESSAGE value="fixed some position issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some position issues" />
   </component>
 </project>
