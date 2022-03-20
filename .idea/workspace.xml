@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="run some compression">
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added google search">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +48,11 @@
       <workItem from="1647706708328" duration="1802000" />
       <workItem from="1647708553847" duration="6332000" />
       <workItem from="1647718581877" duration="6023000" />
-      <workItem from="1647763233965" duration="4913000" />
+      <workItem from="1647763233965" duration="5537000" />
+      <workItem from="1647770034083" duration="882000" />
+      <workItem from="1647775381428" duration="834000" />
+      <workItem from="1647781367099" duration="2981000" />
+      <workItem from="1647787442035" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -175,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647767923196</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added google search">
+      <created>1647768341633</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1647768341634</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +218,7 @@
     <MESSAGE value="added disqus" />
     <MESSAGE value="updated disqus" />
     <MESSAGE value="run some compression" />
-    <option name="LAST_COMMIT_MESSAGE" value="run some compression" />
+    <MESSAGE value="added google search" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google search" />
   </component>
 </project>
