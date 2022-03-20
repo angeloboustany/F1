@@ -4,6 +4,7 @@
     <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="2th stream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <workItem from="1647775381428" duration="834000" />
       <workItem from="1647781367099" duration="2981000" />
       <workItem from="1647787442035" duration="121000" />
-      <workItem from="1647796431151" duration="785000" />
+      <workItem from="1647796431151" duration="2043000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647796979730</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2th stream">
+      <created>1647797273064</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647797273065</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
