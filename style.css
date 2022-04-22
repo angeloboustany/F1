@@ -14,6 +14,7 @@ cursor: crosshair;
   height: 76px;
   line-height: 78px;
   font-size: 2vw;
+    text-size-adjust: auto;
   font-family: 'Bebas Neue', sans-serif;
   background: linear-gradient(45deg, transparent 5%, #370617 5%);
   border: 0;
