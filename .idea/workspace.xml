@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="2th stream">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,7 @@
       <workItem from="1647787442035" duration="121000" />
       <workItem from="1647796431151" duration="2255000" />
       <workItem from="1649048309898" duration="1099000" />
+      <workItem from="1650641701990" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
