@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added nbsp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="major update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +55,7 @@
       <workItem from="1649048309898" duration="1099000" />
       <workItem from="1650641701990" duration="213000" />
       <workItem from="1650642383961" duration="6875000" />
+      <workItem from="1650737342808" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650642769455</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="major update">
+      <created>1650737475551</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1650737475551</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +281,7 @@
     <MESSAGE value="2th stream" />
     <MESSAGE value="updating from var to let in javascript" />
     <MESSAGE value="added nbsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="added nbsp" />
+    <MESSAGE value="major update" />
+    <option name="LAST_COMMIT_MESSAGE" value="major update" />
   </component>
 </project>
