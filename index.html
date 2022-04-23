@@ -50,10 +50,10 @@
             <p id="round"></p>
             <p id="country"></p>
             <p id="circuitId"></p>
+            <p id="circuitName"></p>
             <ul>
-                <p id="circuitName"></p>
-                    <li id="lat" style="margin-left: -6px;"></li>
-                    <li id="long"></li>
+                <li id="lat" style="margin-left: -6px;"></li>
+                <li id="long"></li>
             </ul>
             <a id="url" href=""></a>
         </div>
@@ -197,7 +197,7 @@ function setTimer(time,d,h,m,s,e) {
     }, 1000);
 }
 
-let api_url = "http://ergast.com/api/f1/current.json";
+let api_url = "https://ergast.com/api/f1/current.json";
 
 let data = "";
 var year,month,day,date, date1,date2,date3,date4,obj;
@@ -207,8 +207,7 @@ function getTime(t){
     let timegmt3 = Number(time1.split(":")[0]);
     timegmt3 += 3;
     let time = timegmt3+":"+time1.split(":")[1]+":"+time1.split(":")[2];
-    let date = month+" "+ day+ ", "+year+ " "+time;
-    return date;
+    return month + " " + day + ", " + year + " " + time;
 }
 
 var requestOptions = {
@@ -227,8 +226,8 @@ async function getData(file) {
     year = x.split("-")[0];
     month = x.split("-")[1];
     day = x.split("-")[2];
-    time1 = y.replace('Z',' ');
-    timegmt3 = Number(time1.split(":")[0]);
+    var time1 = y.replace('Z', ' ');
+    var timegmt3 = Number(time1.split(":")[0]);
     timegmt3 += 3;
     time = timegmt3+":"+time1.split(":")[1]+":"+time1.split(":")[2];
     date = month+" "+ day+ ", "+year+ " "+time;
