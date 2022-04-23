@@ -211,8 +211,13 @@ function getTime(t){
     return date;
 }
 
+var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+};
+
 async function getData(file) {
-    let result = await fetch(file);
+    let result = await fetch(file, requestOptions);
     let dt = await result.json();
     data = dt.MRData;
     var x = data.RaceTable.Races[nextRace].date;
