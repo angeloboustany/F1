@@ -17,17 +17,15 @@
 
 <body>
     <main id="main">
-        <table id="frames">
+        <!--<table id="frames">
             <tr>
-                <td><button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English
-                        (1)</button></td>
-                <td><button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English
-                        (2)</button></td>
+                <td><button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button></td>
+                <td><button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button></td>
                 <td><button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French
                         &nbsp &nbsp
                     </button></td>
             </tr>
-        </table>
+        </table>-->
         <br><br>
         <div class="timer">
             <h1 id="race"></h1>
@@ -41,6 +39,11 @@
         <div class="container">
             <iframe id="responsive" src="" name="frame" allow="fullscreen" scrolling="no"
                 sandbox="allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div id="frames">
+            <button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button>
+            <button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button>
+            <button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French&nbsp&nbsp</button>
         </div>
     </main>
     <br>

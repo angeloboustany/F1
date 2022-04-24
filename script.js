@@ -90,7 +90,6 @@ async function getData(file) {
 
     var circuitId = data.RaceTable.Races[nextRace].Circuit.circuitId;
     document.getElementById("circuitId").innerHTML = "Circuit Id: " + circuitId;
-    console.log(circuitId);
 
     var circuitName = data.RaceTable.Races[nextRace].Circuit.circuitName;
     document.getElementById("circuitName").innerHTML = "Circuit Name: " + circuitName;
@@ -115,11 +114,9 @@ async function getData(file) {
 
     date3 = getTime(obj[9].date,obj[9].time);
     setTimer(date3, "d3", "h3", "m3", "s3", "e3");
-    console.log(date3);
 
     date4 = getTime(obj[10].date,obj[10].time);
     setTimer(date4, "d4", "h4", "m4", "s4", "e4");
-    console.log(date4);
 
     var sprint = data.RaceTable.Races[nextRace].Sprint;
     if (sprint) {
@@ -135,15 +132,13 @@ async function getData(file) {
     }
 }
 const delay = 3600000 * 5;
-console.log(delay);
 setInterval(function () {
-    if(document.getElementById("end").innerHTML === "TIME UP!!"){
+    if(document.getElementById("end").innerHTML === "TIME UP!!" && nextRace < data.total) {
         clearTimer();
         nextRace++;
-        console.log(nextRace);
         getData(api_url);
     }else {
-        console.log("2");
+        console.log(0);
     }
 }, delay);
 
