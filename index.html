@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="script.js"></script>
     <title>F1Stream</title>
 </head>
 
@@ -159,8 +160,8 @@
         iframe.src = sr;
     }
 </script>
-<script>
-    var nextRace =3 ;
+<!--<script>
+    var nextRace = 3 ;
     // The data/time we want to countdown to
     function setTimer(time, d, h, m, s, e) {
 
@@ -192,8 +193,17 @@
                 document.getElementById(m).innerHTML = ""
                 document.getElementById(s).innerHTML = ""
                 document.getElementById(e).innerHTML = "TIME UP!!";
+
             }
         }, 1000);
+    }
+
+    function clearTimer() {
+        document.getElementById("e1").innerHTML = "";
+        document.getElementById("e2").innerHTML = "";
+        document.getElementById("e3").innerHTML = "";
+        document.getElementById("e4").innerHTML = "";
+        document.getElementById("end").innerHTML = "";
     }
 
     let api_url = "https://ergast.com/api/f1/current.json";
@@ -239,15 +249,6 @@
         var time = date;
         setTimer(time, "days", "hours", "mins", "secs", "end");
 
-        while(true){
-        if(document.getElementById("end").innerHTML === "TIME UP!!"){
-            nextRace++;
-            if(nextRace == data.total){
-                nextRace = 0;
-            }
-        }
-    }
-
         var season = data.RaceTable.Races[nextRace].season;
         document.getElementById("season").innerHTML = "Season: " + season;
 
@@ -280,10 +281,8 @@
         date1 = getTime(obj[7].date,obj[7].time);
         setTimer(date1, "d1", "h1", "m1", "s1", "e1");
 
-
         date2 = getTime(obj[8].date,obj[8].time);
         setTimer(date2, "d2", "h2", "m2", "s2", "e2");
-
 
         date3 = getTime(obj[9].date,obj[9].time);
         setTimer(date3, "d3", "h3", "m3", "s3", "e3");
@@ -306,7 +305,18 @@
             document.getElementById("timing4").innerHTML = "Qualification: " + date4;
         }
     }
+    setInterval(function () {
+        if(document.getElementById("end").innerHTML === "TIME UP!!"){
+            clearTimer();
+            nextRace++;
+            console.log(nextRace);
+            getData(api_url);
+        }else {
+            console.log("2");
+        }
+    }, 5000);
+
     getData(api_url);
 </script>
-
+-->
 </html>
