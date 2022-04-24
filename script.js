@@ -142,6 +142,8 @@ async function getData(file) {
         document.getElementById("timing4").innerHTML = "Qualification: " + date4;
     }
 }
+const delay = 3600000 * 5;
+console.log(delay);
 setInterval(function () {
     if(document.getElementById("end").innerHTML === "TIME UP!!"){
         clearTimer();
@@ -151,6 +153,6 @@ setInterval(function () {
     }else {
         console.log("2");
     }
-}, 5000);
+}, delay);
 
 getData(api_url);
