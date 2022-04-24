@@ -258,3 +258,6 @@ main{
 html body div.recent ul.dsq-widget-list{
     padding-left: 0;
 }
+#end{
+    color: #faa307;
+}
