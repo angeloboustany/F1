@@ -46,16 +46,17 @@ function clearTimer() {
 let api_url = "https://ergast.com/api/f1/current.json";
 
 let data = "";
-var year, month, day, date, date1, date2, date3, date4, obj;
+var date, date1, date2, date3, date4, obj;
+let offset = new Date().getTimezoneOffset() /-60;
 
 function getTime(dte,t) {
     let y = dte.split("-")[0];
     let m= dte.split("-")[1];
     let d= dte.split("-")[2];
     let time1 = t.replace('Z', ' ');
-    let timegmt3 = Number(time1.split(":")[0]);
-    timegmt3 += 3;
-    let time = timegmt3 + ":" + time1.split(":")[1] + ":" + time1.split(":")[2];
+    let timegmt = Number(time1.split(":")[0]);
+    timegmt += offset;
+    let time = timegmt + ":" + time1.split(":")[1] + ":" + time1.split(":")[2];
     return m + " " + d + ", " + y + " " + time;
 }
 
@@ -72,19 +73,10 @@ async function getData(file) {
     var y = data.RaceTable.Races[nextRace].time;
     var raceName = data.RaceTable.Races[nextRace].raceName;
 
-    year = x.split("-")[0];
-    month = x.split("-")[1];
-    day = x.split("-")[2];
-    var time1 = y.replace('Z', ' ');
-    var timegmt3 = Number(time1.split(":")[0]);
-    timegmt3 += 3;
-    time = timegmt3 + ":" + time1.split(":")[1] + ":" + time1.split(":")[2];
-    date = month + " " + day + ", " + year + " " + time;
+    document.getElementById("race").innerHTML = raceName;
 
-    document.getElementById("race").innerHTML = raceName + " (GMT+3)";
-
-    var time = date;
-    setTimer(time, "days", "hours", "mins", "secs", "end");
+    date = getTime(x,y);
+    setTimer(date, "days", "hours", "mins", "secs", "end");
 
     var season = data.RaceTable.Races[nextRace].season;
     document.getElementById("season").innerHTML = "Season: " + season;
