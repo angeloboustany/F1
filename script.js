@@ -1,4 +1,4 @@
-var nextRace = 3 ;
+var nextRace = 4 ;
 // The data/time we want to countdown to
 function setTimer(time, d, h, m, s, e) {
 

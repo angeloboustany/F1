@@ -63,6 +63,7 @@
       <workItem from="1650784359080" duration="6567000" />
       <workItem from="1650794948764" duration="5948000" />
       <workItem from="1650813200956" duration="149000" />
+      <workItem from="1650813500835" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -330,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650813334369</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added analytics">
+      <created>1650813676098</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1650813676098</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
