@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="tehqrOsFtM1TbL_ZebagxttHtNi6cIWhW1OSnZwHwmo" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WFBFMS4');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="script.js"></script>
+    <title>F1Stream</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBFMS4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <main id="main">
+        <!--<table id="frames">
+            <tr>
+                <td><button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button></td>
+                <td><button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button></td>
+                <td><button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French
+                        &nbsp &nbsp
+                    </button></td>
+            </tr>
+        </table>-->
+        <br><br>
+        <div class="timer">
+            <h1 id="race"></h1>
+            <br>
+            <p id="days"></p>
+            <p id="hours"></p>
+            <p id="mins"></p>
+            <p id="secs"></p>
+            <h2 id="end"></h2>
+        </div>
+        <div class="container">
+            <iframe id="responsive" src="" name="frame" allow="fullscreen" scrolling="no"
+                sandbox="allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div id="frames">
+            <button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button>
+            <button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button>
+            <button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French&nbsp&nbsp</button>
+        </div>
+    </main>
+    <br>
+    <div id="Feed">
+        <div id="info">
+            <h1>Info</h1>
+            <p id="season"></p>
+            <p id="round"></p>
+            <p id="country"></p>
+            <p id="circuitId"></p>
+            <p id="circuitName"></p>
+            <ul>
+                <li id="lat"></li>
+                <li id="long"></li>
+            </ul>
+            <a id="url" href=""></a>
+        </div>
+        <div id="Timing">
+            <h1>Timing</h1>
+            <table>
+                <tr>
+                    <td id="timing1"></td>
+                    <td>
+                        <div class="timer2">
+                            <p id="d1"></p>
+                            <p id="h1"></p>
+                            <p id="m1"></p>
+                            <p id="s1"></p>
+                            <h2 id="e1"></h2>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="timing2"></td>
+                    <td>
+                        <div class="timer2">
+                            <p id="d2"></p>
+                            <p id="h2"></p>
+                            <p id="m2"></p>
+                            <p id="s2"></p>
+                            <h2 id="e2"></h2>
+                        </div>
+                </tr>
+                <tr>
+                    <td id="timing3"></td>
+                    <td>
+                        <div class="timer2">
+                            <p id="d3"></p>
+                            <p id="h3"></p>
+                            <p id="m3"></p>
+                            <p id="s3"></p>
+                            <h2 id="e3"></h2>
+                        </div>
+                </tr>
+                <tr>
+                    <td id="timing4"></td>
+                    <td>
+                        <div class="timer2">
+                            <p id="d4"></p>
+                            <p id="h4"></p>
+                            <p id="m4"></p>
+                            <p id="s4"></p>
+                            <h2 id="e4"></h2>
+                        </div>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+
+    <div class="recent">
+        <script type="text/javascript"
+            src="https://f1-boustany-tech.disqus.com/recent_comments_widget.js?num_items=10&hide_avatars=1&excerpt_length=50">
+        </script>
+    </div>
+    <br>
+
+    <div id="disqus_thread">
+        <a href="#" class="comments-holder" onclick="loadDisqus();">
+            <h3 style="color: #ffba08">Show Comments</h3>
+        </a>
+    </div>
+    <script>
+        let disqus_config = function () {
+            this.page.url = f1.boustany.tech;
+            this.page.identifier = f1.boustany.tech
+        };
+        let is_disqus_loaded = false;
+
+        function loadDisqus() {
+            if (!is_disqus_loaded) {
+                is_disqus_loaded = true;
+                let b = document,
+                    a = b.createElement("script");
+                a.src = "https://f1-boustany-tech.disqus.com/embed.js";
+                a.setAttribute("data-timestamp", +new Date());
+                (b.head || b.body).appendChild(a)
+            }
+        }
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a>
+    </noscript>
+
+    <footer>
+        <p>
+            With love by <a href="https://github.com/angeloboustany">@angeloboustany </a> <br>
+            &copy; 2022 <a href="https://f1.boustany.tech/">f1.boustany.tech</a>
+        </p>
+    </footer>
+
+</body>
+t
+<script>
+    function iframe(sr) {
+        let iframe = document.getElementById("responsive");
+        iframe.src = sr;
+    }
+</script>
+<!--<script>
+    var nextRace = 3 ;
+    // The data/time we want to countdown to
+    function setTimer(time, d, h, m, s, e) {
+
+        var countDownDate = new Date(time).getTime();
+
+        // Run myfunc every second
+        var myfunc = setInterval(function () {
+
+            var now = new Date().getTime();
+            var timeleft = countDownDate - now;
+
+            // Calculating the days, hours, minutes and seconds left
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+            // Result is output to the specific element
+            document.getElementById(d).innerHTML = days + "d "
+            document.getElementById(h).innerHTML = hours + "h "
+            document.getElementById(m).innerHTML = minutes + "m "
+            document.getElementById(s).innerHTML = seconds + "s "
+
+            // Display the message when countdown is over
+            if (timeleft < 0) {
+                clearInterval(myfunc);
+                document.getElementById(d).innerHTML = ""
+                document.getElementById(h).innerHTML = ""
+                document.getElementById(m).innerHTML = ""
+                document.getElementById(s).innerHTML = ""
+                document.getElementById(e).innerHTML = "TIME UP!!";
+
+            }
+        }, 1000);
+    }
+
+    function clearTimer() {
+        document.getElementById("e1").innerHTML = "";
+        document.getElementById("e2").innerHTML = "";
+        document.getElementById("e3").innerHTML = "";
+        document.getElementById("e4").innerHTML = "";
+        document.getElementById("end").innerHTML = "";
+    }
+
+    let api_url = "https://ergast.com/api/f1/current.json";
+
+    let data = "";
+    var year, month, day, date, date1, date2, date3, date4, obj;
+
+    function getTime(dte,t) {
+        let y = dte.split("-")[0];
+        let m= dte.split("-")[1];
+        let d= dte.split("-")[2];
+        let time1 = t.replace('Z', ' ');
+        let timegmt3 = Number(time1.split(":")[0]);
+        timegmt3 += 3;
+        let time = timegmt3 + ":" + time1.split(":")[1] + ":" + time1.split(":")[2];
+        return m + " " + d + ", " + y + " " + time;
+    }
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    async function getData(file) {
+        let result = await fetch(file, requestOptions);
+        let dt = await result.json();
+        data = dt.MRData;
+        var x = data.RaceTable.Races[nextRace].date;
+        var y = data.RaceTable.Races[nextRace].time;
+        var raceName = data.RaceTable.Races[nextRace].raceName;
+
+        year = x.split("-")[0];
+        month = x.split("-")[1];
+        day = x.split("-")[2];
+        var time1 = y.replace('Z', ' ');
+        var timegmt3 = Number(time1.split(":")[0]);
+        timegmt3 += 3;
+        time = timegmt3 + ":" + time1.split(":")[1] + ":" + time1.split(":")[2];
+        date = month + " " + day + ", " + year + " " + time;
+
+        document.getElementById("race").innerHTML = raceName + " (GMT+3)";
+
+        var time = date;
+        setTimer(time, "days", "hours", "mins", "secs", "end");
+
+        var season = data.RaceTable.Races[nextRace].season;
+        document.getElementById("season").innerHTML = "Season: " + season;
+
+        var round = data.RaceTable.Races[nextRace].round;
+        document.getElementById("round").innerHTML = "Grand Prix: " + round;
+
+        var url = data.RaceTable.Races[nextRace].url;
+        document.getElementById("url").innerHTML = "More Info";
+        document.getElementById("url").href = url;
+
+        var circuitId = data.RaceTable.Races[nextRace].Circuit.circuitId;
+        document.getElementById("circuitId").innerHTML = "Circuit Id: " + circuitId;
+        console.log(circuitId);
+
+        var circuitName = data.RaceTable.Races[nextRace].Circuit.circuitName;
+        document.getElementById("circuitName").innerHTML = "Circuit Name: " + circuitName;
+
+        var country = data.RaceTable.Races[nextRace].Circuit.Location.country;
+        document.getElementById("country").innerHTML = "Country: " + country;
+
+        var lat = data.RaceTable.Races[nextRace].Circuit.Location.lat;
+        document.getElementById("lat").innerHTML = "lattitude: " + lat;
+
+        var long = data.RaceTable.Races[nextRace].Circuit.Location.long;
+        document.getElementById("long").innerHTML = "longitude: " + long;
+
+        obj = data.RaceTable.Races[nextRace];
+        obj = Object.values(obj);
+
+        date1 = getTime(obj[7].date,obj[7].time);
+        setTimer(date1, "d1", "h1", "m1", "s1", "e1");
+
+        date2 = getTime(obj[8].date,obj[8].time);
+        setTimer(date2, "d2", "h2", "m2", "s2", "e2");
+
+        date3 = getTime(obj[9].date,obj[9].time);
+        setTimer(date3, "d3", "h3", "m3", "s3", "e3");
+        console.log(date3);
+
+        date4 = getTime(obj[10].date,obj[10].time);
+        setTimer(date4, "d4", "h4", "m4", "s4", "e4");
+        console.log(date4);
+
+        var sprint = data.RaceTable.Races[nextRace].Sprint;
+        if (sprint) {
+            document.getElementById("timing1").innerHTML = "1st Practice: " + date1;
+            document.getElementById("timing2").innerHTML = "Qualification: " + date2;
+            document.getElementById("timing3").innerHTML = "2nd Practice: " + date3;
+            document.getElementById("timing4").innerHTML = "Sprint : " + date4;
+        } else {
+            document.getElementById("timing1").innerHTML = "1st Practice: " + date1;
+            document.getElementById("timing2").innerHTML = "2nd Practice: " + date2;
+            document.getElementById("timing3").innerHTML = "3rd Practice: " + date3;
+            document.getElementById("timing4").innerHTML = "Qualification: " + date4;
+        }
+    }
+    setInterval(function () {
+        if(document.getElementById("end").innerHTML === "TIME UP!!"){
+            clearTimer();
+            nextRace++;
+            console.log(nextRace);
+            getData(api_url);
+        }else {
+            console.log("2");
+        }
+    }, 5000);
+
+    getData(api_url);
+</script>
+-->
+
+
+</html>
