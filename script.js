@@ -1,4 +1,20 @@
-var nextRace = 4 ;
+let nextRace = 0;
+let data = "";
+var date, date1, date2, date3, date4, obj;
+let offset = new Date().getTimezoneOffset() /-60;
+
+let api_url = "https://ergast.com/api/f1/current.json";
+
+
+getNextRace();
+
+async function getNextRace() {
+    let r = await fetch('https://f1.boustany.tech/data.php');
+    let d = await r.json();
+    nextRace = await d.round_id;
+    console.log(nextRace);
+    getData(api_url);
+}
 // The data/time we want to countdown to
 function setTimer(time, d, h, m, s, e) {
 
@@ -43,12 +59,6 @@ function clearTimer() {
     document.getElementById("end").innerHTML = "";
 }
 
-let api_url = "https://ergast.com/api/f1/current.json";
-
-let data = "";
-var date, date1, date2, date3, date4, obj;
-let offset = new Date().getTimezoneOffset() /-60;
-
 function getTime(dte,t) {
     let y = dte.split("-")[0];
     let m= dte.split("-")[1];
@@ -71,9 +81,7 @@ async function getData(file) {
     data = dt.MRData;
     var x = data.RaceTable.Races[nextRace].date;
     var y = data.RaceTable.Races[nextRace].time;
-    var raceName = data.RaceTable.Races[nextRace].raceName;
-
-    document.getElementById("race").innerHTML = raceName;
+    document.getElementById("race").innerHTML = data.RaceTable.Races[nextRace].raceName;
 
     date = getTime(x,y);
     setTimer(date, "days", "hours", "mins", "secs", "end");
@@ -131,15 +139,7 @@ async function getData(file) {
         document.getElementById("timing4").innerHTML = "Qualification: " + date4;
     }
 }
-const delay = 3600000 * 5;
-setInterval(function () {
-    if(document.getElementById("end").innerHTML === "TIME UP!!" && nextRace < data.total) {
-        clearTimer();
-        nextRace++;
-        getData(api_url);
-    }else {
-        console.log(0);
-    }
-}, delay);
 
-getData(api_url);
+if(document.getElementById("end").innerHTML === "TIME UP!!") {
+    clearTimer();
+}
