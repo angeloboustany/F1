@@ -3,18 +3,11 @@ let data = "";
 var date, date1, date2, date3, date4, obj;
 let offset = new Date().getTimezoneOffset() /-60;
 
-let api_url = "https://ergast.com/api/f1/current.json";
+let api_url = "https://ergast.com/api/f1/current/next/races.json";
 
 
-getNextRace();
+getData(api_url)
 
-async function getNextRace() {
-    let r = await fetch('https://f1.boustany.tech/data.php');
-    let d = await r.json();
-    nextRace = await d.round_id;
-    console.log(nextRace);
-    getData(api_url);
-}
 // The data/time we want to countdown to
 function setTimer(time, d, h, m, s, e) {
 
