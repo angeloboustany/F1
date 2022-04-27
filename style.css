@@ -192,6 +192,10 @@ td{
     text-align: left;
     vertical-align: baseline;
 }
+li{
+  color: #faa307;
+    vertical-align: baseline;
+}
 
 .timer p {
   color: #d62828;
@@ -212,8 +216,8 @@ td{
 footer {
 	position: relative;
 	left: 0;
-	bottom: 0;
-	width: 100%;
+    bottom: 0px  !important;
+    width: 100%;
 	background-color: #370617;
 	color: #dc2f02;
 	text-align: center;
