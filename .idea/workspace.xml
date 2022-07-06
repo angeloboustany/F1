@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="auto updates">
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added arabic support">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1651076894733" duration="869000" />
       <workItem from="1651078711512" duration="1257000" />
       <workItem from="1651944661647" duration="194000" />
-      <workItem from="1657093962118" duration="390000" />
+      <workItem from="1657093962118" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651079965327</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added arabic support">
+      <created>1657094422208</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1657094422208</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +442,7 @@
     <MESSAGE value="re-worked the buttons" />
     <MESSAGE value="added analytics" />
     <MESSAGE value="auto updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto updates" />
+    <MESSAGE value="added arabic support" />
+    <option name="LAST_COMMIT_MESSAGE" value="added arabic support" />
   </component>
 </project>
