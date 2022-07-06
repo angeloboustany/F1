@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="tehqrOsFtM1TbL_ZebagxttHtNi6cIWhW1OSnZwHwmo" />
+    <meta name="google-site-verification" content="tehqrOsFtM1TbL_ZebagxttHtNi6cIWhW1OSnZwHwmo"/>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WFBFMS4');</script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WFBFMS4');</script>
     <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -24,158 +32,165 @@
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBFMS4"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFBFMS4"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <main id="main">
-        <!--<table id="frames">
+<main id="main">
+    <!--<table id="frames">
+        <tr>
+            <td><button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button></td>
+            <td><button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button></td>
+            <td><button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French
+                    &nbsp &nbsp
+                </button></td>
+        </tr>
+    </table>-->
+    <br><br>
+    <div class="timer">
+        <h1 id="race"></h1>
+        <br>
+        <p id="days"></p>
+        <p id="hours"></p>
+        <p id="mins"></p>
+        <p id="secs"></p>
+        <h2 id="end"></h2>
+    </div>
+    <div class="container">
+        <iframe id="responsive" src="" name="frame" allow="fullscreen" scrolling="no"
+                sandbox="allow-same-origin allow-scripts"></iframe>
+    </div>
+    <div id="frames">
+        <button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button>
+        <button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button>
+        <button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French&nbsp&nbsp
+        </button>
+        <button class="button-49"
+                onclick="iframe('https://vidserv.boustany.tech/?url=https://ssc-6-ak.akamaized.net/out/v1/efbe58d3435d4de1beb1d7e3b27d309f/index.m3u8')">
+            Arabic
+        </button>
+    </div>
+</main>
+<br>
+
+<div id="Feed">
+    <div id="info">
+        <h1>Info</h1>
+        <p id="season"></p>
+        <p id="round"></p>
+        <p id="country"></p>
+        <p id="circuitId"></p>
+        <p id="circuitName"></p>
+        <table>
             <tr>
-                <td><button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button></td>
-                <td><button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button></td>
-                <td><button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French
-                        &nbsp &nbsp
-                    </button></td>
+                <td>
+                    <p id="lat"></p>
+                </td>
+                <td>
+                    <p id="long"></p>
+                </td>
             </tr>
-        </table>-->
-        <br><br>
-        <div class="timer">
-            <h1 id="race"></h1>
-            <br>
-            <p id="days"></p>
-            <p id="hours"></p>
-            <p id="mins"></p>
-            <p id="secs"></p>
-            <h2 id="end"></h2>
-        </div>
-        <div class="container">
-            <iframe id="responsive" src="" name="frame" allow="fullscreen" scrolling="no" sandbox="allow-same-origin allow-scripts"></iframe>
-        </div>
-        <div id="frames">
-            <button class="button-49" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button>
-            <button class="button-49" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button>
-            <button class="button-49" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French&nbsp&nbsp</button>
-            <button class="button-49" onclick="iframe('https://yielding-meeting.surge.sh/?url=https://ssc-6-ak.akamaized.net/out/v1/efbe58d3435d4de1beb1d7e3b27d309f/index.m3u8')">Arabic</button>
-        </div>
-    </main>
-    <br>
-    <div id="Feed">
-        <div id="info">
-            <h1>Info</h1>
-            <p id="season"></p>
-            <p id="round"></p>
-            <p id="country"></p>
-            <p id="circuitId"></p>
-            <p id="circuitName"></p>
-            <table>
-                <tr>
-                    <td>
-                        <p id="lat"></p>
-                    </td>
-                    <td>
-                        <p id="long"></p>
-                    </td>
-                </tr>
-            </table>
+        </table>
 
-            <a id="url" href=""></a>
-        </div>
-        <div id="Timing">
-            <h1>Timing</h1>
-            <table>
-                <tr>
-                    <td id="timing1"></td>
-                    <td>
-                        <div class="timer2">
-                            <p id="d1"></p>
-                            <p id="h1"></p>
-                            <p id="m1"></p>
-                            <p id="s1"></p>
-                            <h2 id="e1"></h2>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="timing2"></td>
-                    <td>
-                        <div class="timer2">
-                            <p id="d2"></p>
-                            <p id="h2"></p>
-                            <p id="m2"></p>
-                            <p id="s2"></p>
-                            <h2 id="e2"></h2>
-                        </div>
-                </tr>
-                <tr>
-                    <td id="timing3"></td>
-                    <td>
-                        <div class="timer2">
-                            <p id="d3"></p>
-                            <p id="h3"></p>
-                            <p id="m3"></p>
-                            <p id="s3"></p>
-                            <h2 id="e3"></h2>
-                        </div>
-                </tr>
-                <tr>
-                    <td id="timing4"></td>
-                    <td>
-                        <div class="timer2">
-                            <p id="d4"></p>
-                            <p id="h4"></p>
-                            <p id="m4"></p>
-                            <p id="s4"></p>
-                            <h2 id="e4"></h2>
-                        </div>
-                </tr>
-            </table>
-        </div>
+        <a id="url" href=""></a>
     </div>
-    <br>
+    <div id="Timing">
+        <h1>Timing</h1>
+        <table>
+            <tr>
+                <td id="timing1"></td>
+                <td>
+                    <div class="timer2">
+                        <p id="d1"></p>
+                        <p id="h1"></p>
+                        <p id="m1"></p>
+                        <p id="s1"></p>
+                        <h2 id="e1"></h2>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="timing2"></td>
+                <td>
+                    <div class="timer2">
+                        <p id="d2"></p>
+                        <p id="h2"></p>
+                        <p id="m2"></p>
+                        <p id="s2"></p>
+                        <h2 id="e2"></h2>
+                    </div>
+            </tr>
+            <tr>
+                <td id="timing3"></td>
+                <td>
+                    <div class="timer2">
+                        <p id="d3"></p>
+                        <p id="h3"></p>
+                        <p id="m3"></p>
+                        <p id="s3"></p>
+                        <h2 id="e3"></h2>
+                    </div>
+            </tr>
+            <tr>
+                <td id="timing4"></td>
+                <td>
+                    <div class="timer2">
+                        <p id="d4"></p>
+                        <p id="h4"></p>
+                        <p id="m4"></p>
+                        <p id="s4"></p>
+                        <h2 id="e4"></h2>
+                    </div>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
 
-    <div class="recent">
-        <script type="text/javascript"
+<div class="recent">
+    <script type="text/javascript"
             src="https://f1-boustany-tech.disqus.com/recent_comments_widget.js?num_items=10&hide_avatars=1&excerpt_length=50">
-        </script>
-    </div>
-    <br>
-
-    <div id="disqus_thread">
-        <a href="#" class="comments-holder" onclick="loadDisqus();">
-            <h3 style="color: #ffba08">Show Comments</h3>
-        </a>
-    </div>
-    <script>
-        let disqus_config = function () {
-            this.page.url = f1.boustany.tech;
-            this.page.identifier = f1.boustany.tech
-        };
-        let is_disqus_loaded = false;
-
-        function loadDisqus() {
-            if (!is_disqus_loaded) {
-                is_disqus_loaded = true;
-                let b = document,
-                    a = b.createElement("script");
-                a.src = "https://f1-boustany-tech.disqus.com/embed.js";
-                a.setAttribute("data-timestamp", +new Date());
-                (b.head || b.body).appendChild(a)
-            }
-        }
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a>
-    </noscript>
+</div>
+<br>
 
+<div id="disqus_thread">
+    <a href="#" class="comments-holder" onclick="loadDisqus();">
+        <h3 style="color: #ffba08">Show Comments</h3>
+    </a>
+</div>
+<script>
+    let disqus_config = function () {
+        this.page.url = f1.boustany.tech;
+        this.page.identifier = f1.boustany.tech
+    };
+    let is_disqus_loaded = false;
 
-    <footer>
-        <p>
-            With love by <a href="https://github.com/angeloboustany">@angeloboustany </a> <br>
-            &copy; 2022 <a href="https://f1.boustany.tech/">f1.boustany.tech</a>
-        </p>
-    </footer>
+    function loadDisqus() {
+        if (!is_disqus_loaded) {
+            is_disqus_loaded = true;
+            let b = document,
+                a = b.createElement("script");
+            a.src = "https://f1-boustany-tech.disqus.com/embed.js";
+            a.setAttribute("data-timestamp", +new Date());
+            (b.head || b.body).appendChild(a)
+        }
+    }
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a>
+</noscript>
+
+<footer>
+    <p>
+        With love by <a href="https://github.com/angeloboustany">@angeloboustany </a> <br>
+        &copy; 2022 <a href="https://f1.boustany.tech/">f1.boustany.tech</a>
+    </p>
+</footer>
 
 </body>
-t
+
 <script>
     function iframe(sr) {
         let iframe = document.getElementById("responsive");
