@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="added arabic support" />
+    <list default="true" id="e324e38b-adbd-41ef-bfd6-423f11af2092" name="Changes" comment="fixed main screen margin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +89,8 @@
       <workItem from="1651944661647" duration="194000" />
       <workItem from="1657093962118" duration="3404000" />
       <workItem from="1657105639236" duration="704000" />
+      <workItem from="1657269045437" duration="600000" />
+      <workItem from="1657364638729" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="update CNAME">
       <created>1647621428497</created>
@@ -423,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657105739128</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fixed main screen margin">
+      <created>1657269144074</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1657269144074</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,6 +475,7 @@
     <MESSAGE value="added analytics" />
     <MESSAGE value="auto updates" />
     <MESSAGE value="added arabic support" />
-    <option name="LAST_COMMIT_MESSAGE" value="added arabic support" />
+    <MESSAGE value="fixed main screen margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed main screen margin" />
   </component>
 </project>
