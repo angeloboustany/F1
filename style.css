@@ -40,7 +40,6 @@ button{
   height: 100%;
   width: 100%;
   align-items: baseline;
-
 }
 #info a{
   position: relative;
@@ -62,7 +61,7 @@ button{
     margin-bottom: 3%;
     padding-top: 40%;
     border: 1px solid #ffb703;
-      border-radius: 2em;
+    border-radius: 2em;
 }
 
 #responsive {
