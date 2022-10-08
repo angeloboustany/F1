@@ -38,15 +38,7 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <main id="main">
-    <!--<table id="frames">
-        <tr>
-            <td><button class="button-44" onclick="iframe('https://mazystreams.xyz/f1.php')">English(1)</button></td>
-            <td><button class="button-44" onclick="iframe('https://f1livegp.me/f1/live.php')">English(2)</button></td>
-            <td><button class="button-44" onclick="iframe('https://cdn.sportcast.life/nginx.php?id=122')">French
-                    &nbsp &nbsp
-                </button></td>
-        </tr>
-    </table>-->
+
     <br><br>
     <div class="timer">
         <h1 id="race"></h1>
@@ -58,7 +50,7 @@
         <h2 id="end"></h2>
     </div>
     <div class="container">
-        <iframe id="responsive" src="" name="frame" allow="fullscreen" scrolling="no"
+        <iframe id="responsive" src="https://wikisport.click/strm/26f.php" name="frame" allow="fullscreen" scrolling="no"
                 sandbox="allow-same-origin allow-scripts"></iframe>
     </div>
     
@@ -144,33 +136,6 @@
     </script>
 </div>
 <br>
-
-<div id="disqus_thread">
-    <a href="#" class="comments-holder" onclick="loadDisqus();">
-        <h3 style="color: #ffba08">Show Comments</h3>
-    </a>
-</div>
-<script>
-    let disqus_config = function () {
-        this.page.url = f1.boustany.tech;
-        this.page.identifier = f1.boustany.tech
-    };
-    let is_disqus_loaded = false;
-
-    function loadDisqus() {
-        if (!is_disqus_loaded) {
-            is_disqus_loaded = true;
-            let b = document,
-                a = b.createElement("script");
-            a.src = "https://f1-boustany-tech.disqus.com/embed.js";
-            a.setAttribute("data-timestamp", +new Date());
-            (b.head || b.body).appendChild(a)
-        }
-    }
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a>
-</noscript>
 
 <footer>
     <p>
