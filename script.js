@@ -98,11 +98,11 @@ async function getData(file) {
     var country = data.RaceTable.Races[nextRace].Circuit.Location.country;
     document.getElementById("country").innerHTML = "Country: " + country;
 
-    var lat = data.RaceTable.Races[nextRace].Circuit.Location.lat;
+    /* var lat = data.RaceTable.Races[nextRace].Circuit.Location.lat;
     document.getElementById("lat").innerHTML = "lattitude: " + lat;
 
     var long = data.RaceTable.Races[nextRace].Circuit.Location.long;
-    document.getElementById("long").innerHTML = "longitude: " + long;
+    document.getElementById("long").innerHTML = "longitude: " + long; */
 
     obj = data.RaceTable.Races[nextRace];
     obj = Object.values(obj);
