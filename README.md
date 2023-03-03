@@ -6,5 +6,7 @@
 
 **Enjoy a clean and simple stream interface for the F1 races.**
 
+** https://f1-a25.pages.dev/ **
+
 **Developed by [@Angelo](https://github.com/angelo-boustany)**
 
